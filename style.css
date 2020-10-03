@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    background: url('.img/body-background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*header*/
+li, a, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  background-color: #2F2F2B;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+  background-color: #2F2F2B;
+  position: fixed;
+  width: 100%;
+}
+.logo {
+  cursor: pointer;
+  height: 110px;
+  width: 215px;
+  border-radius: 50px;
+}
+.nav__links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+  color: #0088a9;
+}
+button{
+  padding-top: 12px;
+  padding-bottom:  12px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 14px;
+}
+button:hover{
+  background-color: rgba(0,136,169,0.8);
+}
+/*body*/
+
+/************************************************************************************************************/
+/*                                                   home                                                   */
+/************************************************************************************************************/
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 190px;
+  padding-bottom: 80px;
+}
+.profile-pic img{
+  height: 400px;
+  border-radius: 200px;
+  border-color: rgba(0,136,169,1);
+  transition: all 0.3s ease 0s;
+}
+.profile-pic img:hover{  
+  -webkit-box-shadow:rgba(0,136,169,6) 0px 5px 15px, inset rgba(0,136,169,6) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,136,169,6) 0px 5px 15px, inset rgba(0,136,169,6) 0px -10px 20px;
+  -o-box-shadow:rgba(0,136,169,6) 0px 5px 15px, inset rgba(0,136,169,6) 0px -10px 20px;
+  box-shadow:rgba(0,136,169,6) 0px 5px 15px, inset rgba(0,136,169,6) 0px -10px 20px;
+}
+.data{
+  padding: 0px 40px;
+}
+h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+  color: #2F2F2B;
+}
+h2{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: rgba(0,136,169,1);
+}
+p{
+  padding: 20px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/*Footer*/
+footer{
+  background-color: #2F2F2B;
+  padding: 10px 10%;
+}
+.footer-elements{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+ /* call section */
+.call{
+  display: flex;
+  align-items: center;
+}
+.phone img{
+  height: 40px;
+}
+.phone-no{
+  padding: 10px;
+}
+/* contact section*/
+.contact{
+  display: flex;
+  align-items: center;
+}
+.mail img{
+  height: 40px;
+}
+.mail-id{
+  padding: 10px;
+}
+/*follow section*/
+.Follow-me{
+  display: flex;
+  align-items: center;
+}
+.follow img{
+  height: 40px;
+}
+.social-handel{
+  padding: 10px;
+}
+.insta-data{
+  display: flex;
+}
+.insta img{
+  height: 15px;
+  padding-right: 10px;
+}
+/*copyright*/
+.copyrights{
+  display: flex;
+  align-items: center;
+}
+.copy img{
+  height: 40px;
+}
+.copy-holder{
+  padding: 10px;
+}
+
+h3{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #0088a9;
+  transition: all 0.3s ease 0s;
+}
+h4{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color:#edf0f1;
+  transition: all 0.3s ease 0s;
+}
+h4:hover{
+  color: #0088a9;
+}
+
+/************************************************************************************************************/
+/*                                                   Resume                                                 */
+/************************************************************************************************************/
+#nav-waste1, #nav-waste2{
+  margin-bottom: 110px;
+}
+.resume{
+  display: flex;
+  background-color: #2F2F2B;
+  flex-direction: column;
+  align-items: center;
+}
+.resume p{
+ color: #edf0f1;
+}
+.resume h3{
+ font-size: 20px;
+ color: #edf0f1;
+ padding-top: 10px;
+}
+.hr1{
+  color: white;
+  width: 60%;
+}
+/*head*/
+#resume-head{
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: center;
+  background-color: #2F2F2B;
+}
+#resume-head h1{
+ color: #edf0f1;
+}
+/*professional info*/
+.pro-info-logo img{
+   height: 200px;
+   padding-left: 50px;
+}
+.professional-info{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2%;  
+  padding-bottom: 2%;
+  align-items: center;
+}
+.pro-info-data{
+  padding-left: 50px;
+}
+
+/*work experience*/
+.work-logo img{
+   height: 200px;
+   padding-left: 50px;
+}
+
+.work-experience{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 0px;
+  align-items: center;
+}
+.work-experience-data{
+  padding-left: 50px;
+}
+
+/*Education*/
+.education-logo img{
+   height: 200px;
+   padding-left: 50px;
+}
+.education h2{
+ padding-bottom: 20px;
+}
+.education{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2%;
+  padding-bottom: 5px;
+  align-items: center;
+}
+.education-data{
+  padding-left: 50px;
+}
+
+/************************************************************************************************************/
+/*                                                   Project                                                */
+/************************************************************************************************************/
+
+/*head*/
+#Project-head{
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: center;
+}
+.hr2{
+  color: #2F2F2B;
+  width: 65%;
+}
+
+.Project h3{
+ font-size: 20px;
+ padding-top: 10px;
+}
+.Project p{
+ font-size: 15px;
+}
+.Project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Project 1*/
+.project1 img{
+  height: 250px;
+  padding: 5%;
+}
+.project1{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*Project 2*/
+.project2 img{
+  height: 250px;
+  padding: 5%;
+}
+.project2{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*Project 3*/
+.project3 img{
+  height: 250px;
+  padding: 5%;
+}
+.project3{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*Project 4*/
+.project4 img{
+  height: 250px;
+  width: 415px;
+  padding: 5%;
+}
+.project4{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/************************************************************************************************************/
+/*                                                   Contact                                                */
+/************************************************************************************************************/
+#contact{
+
+}
+/*contact form*/
+span, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #2F2F2B;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #0088a9;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #edf0f1;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #edf0f1;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #0088a9;
+}
+
+/*media file*/
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+@media (max-width: 840px){
+  /* Navbar*/
+  header 
+  {
+   flex-direction: column;
+  }
+  #nav-waste1, #nav-waste2
+  {
+   margin-bottom: 201px;
+  }
+  .cta 
+  {
+   padding: 15px;
+  }
+  /*Home*/
+  .profile-pic img
+  {
+   margin-top: 50px;
+   margin-bottom: 20px;
+   height: 40vh;
+   border-radius: 20vh;
+  }
+  .data h1
+  {
+    font-size: 80px;
+  }
+  .data h2
+  {
+    font-size: 36px;
+  }
+  .home
+  {
+    padding-bottom: 10px;
+  }
+  /*Resume*/
+  #resume-head h1
+  {
+    font-size: 55px;
+  }
+  .pro-info-data h2
+  {
+    font-size: 35px;
+  }
+  .pro-info-data
+  {
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+  .professional-info, .work-experience, .education
+  {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pro-info-logo img
+  {
+    padding: 0px;
+  }
+  .work-experience-data h2
+  {
+    font-size: 35px;
+  }
+  .work-logo img
+  {
+    padding: 0px;
+  }
+  .work-experience-data
+  {
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+  .education-data h2
+  {
+    font-size: 35px;
+  }
+  .education-logo img
+  {
+    padding: 0px;
+  }
+  .education-data{
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+  /*Project*/
+  #Project-head h1
+  {
+    font-size: 40px;
+  }
+  .project1-img img,.project2-img img,.project3-img img
+  {
+   margin-top: 0px;
+   margin-bottom: 0px;
+   height: 28vh;
+  }
+  .project4-img img
+  {
+   height: 28vh;
+   width: 46vh;
+  }
+  .project1, .project2, .project3, .project4
+  {
+   justify-content: center;
+  }
+}
+
+@media (max-width: 411px)
+{
+  /*for removing browser padding*/
+  html, body 
+  {
+    width:100%;
+    height:100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  /*Navbar*/
+  .nav__links li
+  {
+    padding: 0px 10px;
+  }
+  /*Resume*/
+  .pro-info-data p
+  {
+    font-size: 0.9em;
+  }
+  .pro-info-logo img 
+  {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 16vh;
+  }
+  .work-experience-data p
+  {
+    font-size: 0.9em;
+  }
+  .work-logo img
+  {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 16vh;
+  }
+  .education-data p
+  {
+    font-size: 0.9em;
+  }
+  .education-data h3
+  {
+    font-size: 1em;
+  }
+  .education-logo img
+  {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 16vh;
+  }
+  .resume .hr1
+  {
+    width: 90%;
+  }
+  /*Project*/
+  .Project .hr2 
+  {
+    width: 85%; 
+  }
+  .Project p
+  {
+   font-size: 0.9em;
+  }
+  .project1, .project2, .project3, .project4
+  {
+    justify-content: center;
+  } 
+}

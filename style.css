@@ -11,7 +11,7 @@ html {
   padding: 0;
 }
 body{
-    background: url('.img/body-background.jpg') no-repeat center center fixed; 
+    background: url('body-background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -18,7 +18,16 @@ body{
   background-size: cover;
 }
 /*header*/
-li, a, button{
+li, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  background-color: #2F2F2B;
+}
+header a
+{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -346,13 +355,15 @@ h4:hover{
 /*Project 4*/
 .project4 img{
   height: 250px;
-  width: 415px;
   padding: 5%;
 }
 .project4{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+.check-more h3{
+  padding: 5%;
 }
 
 /************************************************************************************************************/
@@ -481,7 +492,7 @@ span, button, input {
 }
 
 .app-form-button:hover {
-  color: #0088a9;
+  color: #edf0f1;
 }
 
 /*media file*/

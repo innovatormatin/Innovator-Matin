@@ -171,6 +171,9 @@ footer{
 .insta-data{
   display: flex;
 }
+.insta-data a{
+  text-decoration: none;
+}
 .insta img{
   height: 15px;
   padding-right: 10px;

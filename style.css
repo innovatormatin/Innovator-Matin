@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +19,7 @@ body{
 }
 /*header*/
 li, .cta, .menu , .overlay__content a{
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #edf0f1;
@@ -24,7 +28,7 @@ li, .cta, .menu , .overlay__content a{
 }
 header a
 {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #edf0f1;
@@ -157,19 +161,19 @@ header {
   width: 650px;
 }
 h1{
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 100px;
   color: #2F2F2B;
 }
 h2{
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 60px;
   color: rgba(0,136,169,1);
 }
 p{
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 20px;
 }
@@ -241,14 +245,14 @@ footer{
 }
 
 h3{
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #0088a9;
   transition: all 0.3s ease 0s;
 }
 h4{
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color:#edf0f1;
@@ -427,7 +431,7 @@ h4:hover{
 }
 /*contact form*/
 span, button, input {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
 }

@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -18,8 +14,8 @@ body{
   background-size: cover;
 }
 /*header*/
-li, button{
-  font-family: "Montserrat", sans-serif;
+li, .cta, .menu , .overlay__content a{
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #edf0f1;
@@ -28,7 +24,7 @@ li, button{
 }
 header a
 {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #edf0f1;
@@ -45,11 +41,11 @@ header {
   background-color: #2F2F2B;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .logo {
   cursor: pointer;
   height: 110px;
-  width: 215px;
   border-radius: 50px;
 }
 .nav__links li{
@@ -62,11 +58,12 @@ header {
 .nav__links li a:hover{
   color: #0088a9;
 }
-button{
-  padding-top: 12px;
-  padding-bottom:  12px;
-  padding-right: 25px;
-  padding-left: 25px;
+.cta 
+{
+  padding-top: 1%;
+  padding-bottom:  1%;
+  padding-right: 2%;
+  padding-left: 2%;
   background-color: rgba(0,136,169,1);
   border: none;
   border-radius: 50px;
@@ -74,9 +71,61 @@ button{
   transition: all 0.3s ease 0s;
   font-size: 14px;
 }
-button:hover{
-  background-color: rgba(0,136,169,0.8);
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
 }
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #2F2F2B;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
 /*body*/
 
 /************************************************************************************************************/
@@ -89,6 +138,7 @@ button:hover{
   justify-content: center;
   padding-top: 190px;
   padding-bottom: 80px;
+  flex-direction: row;
 }
 .profile-pic img{
   height: 400px;
@@ -104,22 +154,22 @@ button:hover{
 }
 .data{
   padding: 0px 40px;
+  width: 650px;
 }
 h1{
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 100px;
   color: #2F2F2B;
 }
 h2{
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 60px;
   color: rgba(0,136,169,1);
 }
 p{
-  padding: 20px 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 20px;
 }
@@ -191,14 +241,14 @@ footer{
 }
 
 h3{
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #0088a9;
   transition: all 0.3s ease 0s;
 }
 h4{
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 14px;
   color:#edf0f1;
@@ -287,7 +337,7 @@ h4:hover{
   display: flex;
   flex-wrap: wrap;
   padding-top: 2%;
-  padding-bottom: 5px;
+  padding-bottom: 35px;
   align-items: center;
 }
 .education-data{
@@ -377,11 +427,21 @@ h4:hover{
 }
 /*contact form*/
 span, button, input {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
 }
-
+button {  
+  padding-top: 1px;
+  padding-bottom:  1px;
+  padding-right: 2px;
+  padding-left: 2px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;  
+  font-size: 14px;
+}
 .background {
   display: flex;
   min-height: 100vh;
@@ -499,7 +559,13 @@ span, button, input {
 }
 
 /*media file*/
-
+@media screen and (min-width: 841px)
+{
+  p
+  {
+    width: 545px;
+  }
+}
 @media screen and (max-width: 520px) {
   .screen-body {
     flex-direction: column;
@@ -534,17 +600,24 @@ span, button, input {
 
 @media (max-width: 840px){
   /* Navbar*/
-  header 
-  {
-   flex-direction: column;
-  }
+  .logo
+  { height: 80px; }
   #nav-waste1, #nav-waste2
   {
-   margin-bottom: 201px;
+   margin-bottom: 79px;
   }
-  .cta 
-  {
-   padding: 15px;
+  .home
+  { padding-top: 60px; }
+  .nav__links,
+  .cta {
+    display: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  .menu {
+    display: initial;
   }
   /*Home*/
   .profile-pic img
@@ -566,6 +639,9 @@ span, button, input {
   {
     padding-bottom: 10px;
   }
+  p{
+    font-size: 18px;
+  }
   /*Resume*/
   #resume-head h1
   {
@@ -579,6 +655,7 @@ span, button, input {
   {
     padding-left: 25px;
     padding-right: 20px;
+    padding-bottom: 20px;
   }
   .professional-info, .work-experience, .education
   {
@@ -601,6 +678,7 @@ span, button, input {
   {
     padding-left: 25px;
     padding-right: 20px;
+    padding-bottom: 20px;
   }
   .education-data h2
   {
@@ -613,6 +691,7 @@ span, button, input {
   .education-data{
     padding-left: 25px;
     padding-right: 20px;
+    padding-bottom: 20px;
   }
   /*Project*/
   #Project-head h1

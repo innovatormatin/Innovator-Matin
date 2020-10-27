@@ -12,7 +12,7 @@
 </head>
  <body>
  	    <div class="image"></div>
-        <!-----------------------------------------------------Header---------------------------------------->
+        <!----------------------------------------------------[ Header ]--------------------------------------->
         <header>
             <img class="logo" src="dp.png" alt="logo">
             <nav>
@@ -116,7 +116,7 @@
         		</div>
         	</div>
         </div>
-        <!----------------------------------------------------Project---------------------------------------->
+        <!--------------------------------------------------[ Project ]--------------------------------------->
         <div id="nav-waste2"></div>
         <div id="Project-head"><h1> Latest Project</h1></div>
         <div class="Project">
@@ -179,46 +179,40 @@
         	</div>
             <div class="check-more"><h3><br>If you want to see more work, then check out my instagram handle.</h3></div>  
         </div>	
-        <!-----------------------------------------------------Contact--------------------------------------->
+        <!----------------------------------------------------[ Contact ]-------------------------------------->
         <div id="contact">
         	<!--contact form-->
-        	<div class="background">
-  <div class="container">
-    <div class="screen">
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <div class="app-title">
-            <span>CONTACT</span>
-            <span>ME</span>
-          </div>
-          <div class="app-contact">CONTACT INFO : +91-9518147822</div>
-        </div>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="CONTACT NO">
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE">
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
-            </div>
-          </div>
-        </div>
+             <div id="contact-container">
+  <form class="frm" method="post" autocomplete="off">
+    <h1>Contact Me</h1>
+
+    <div class="upper-part">
+      <div class="contact-Name">
+        <div class=""><span class="i-title">Your Name</span></div>
+        <div class="in"><input type="text" name="name" class="input100" required placeholder="Enter your name"></div>
+        <hr>
+      </div>
+      <div class="contact-email">
+        <div class=""><span class="i-title">E-mail</span></div>
+        <div class="in"><input type="email" name="e-mail" class="input100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Enter your E-mail ID"></div>
+        <hr>
       </div>
     </div>
-    
-  </div>
-</div>
 
+      <div class="contact-message">
+        <div class=""><span class="i-title">Message</span></div>
+        <div class="in"><textarea name="message" class="input100" required placeholder="Your message here..."></textarea></div>
+        <hr>
+      </div>
+    <input class="s-btn" type="submit" value="Submit">
+  </form>
+    <div class="frm-footer">
+      <br><br>For any question contact me +91-951814**22
+    </div>
+  </div>
+
+
+        	<!---------------->
         </div>
         <!-----------------------------------------------------Footer---------------------------------------->
         <footer>

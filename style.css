@@ -309,10 +309,12 @@ h4:hover{
   flex-wrap: wrap;
   padding-top: 2%;  
   padding-bottom: 2%;
+  justify-content: center;
   align-items: center;
 }
 .pro-info-data{
   padding-left: 50px;
+  width: 55%;
 }
 
 /*work experience*/
@@ -325,10 +327,12 @@ h4:hover{
   display: flex;
   flex-wrap: wrap;
   padding: 2% 0px;
+  justify-content: center;
   align-items: center;
 }
 .work-experience-data{
   padding-left: 50px;
+  width: 55%;
 }
 
 /*Education*/
@@ -344,10 +348,12 @@ h4:hover{
   flex-wrap: wrap;
   padding-top: 2%;
   padding-bottom: 35px;
+  justify-content: center;
   align-items: center;
 }
 .education-data{
   padding-left: 50px;
+  width: 55%;
 }
 
 /************************************************************************************************************/
@@ -424,7 +430,9 @@ h4:hover{
 .check-more h3{
   padding: 5%;
 }
-
+.project-data{
+  padding-left: 10px;
+}
 /************************************************************************************************************/
 /*                                                   Contact                                                */
 /************************************************************************************************************/
@@ -630,6 +638,7 @@ hr{
     padding-left: 25px;
     padding-right: 20px;
     padding-bottom: 20px;
+    width: 100%;
   }
   .professional-info, .work-experience, .education
   {
@@ -653,6 +662,7 @@ hr{
     padding-left: 25px;
     padding-right: 20px;
     padding-bottom: 20px;
+    width: 100%;
   }
   .education-data h2
   {
@@ -666,6 +676,7 @@ hr{
     padding-left: 25px;
     padding-right: 20px;
     padding-bottom: 20px;
+    width: 100%;
   }
   /*Project*/
   #Project-head h1
@@ -686,6 +697,11 @@ hr{
   .project1, .project2, .project3, .project4
   {
    justify-content: center;
+  }
+  .project-data{
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
   }
 }
 
